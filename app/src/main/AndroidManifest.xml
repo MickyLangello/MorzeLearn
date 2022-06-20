@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quantorioum.morzelearn">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MorzeLearn"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GameActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.quantorioum.morzelearn.GameActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".LearnActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.quantorioum.morzelearn.LearnActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Choose"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.quantorioum.morzelearn.Choose" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Translate"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.quantorioum.morzelearn.Translate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Write"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.quantorioum.morzelearn.Write" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
